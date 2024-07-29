@@ -1,0 +1,223 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family:"Poppins"; */
+
+  -webkit-tap-highlight-color: transparent;
+  
+}
+html{
+  scroll-behavior: smooth;
+  
+}
+body {
+  height: 100vh;
+  width: 100%;
+  /* background-color: rgb(250 232 255); */
+  /* background-color: rgb(243, 232, 255); */
+  /* background-color: #fff4f3; */
+  /* background-color: rgb(247 254 231); */
+  /* border: 1px solid  black; */
+  background-image: radial-gradient(farthest-corner at 50% 50%, #ffe6d9, #fff);
+  /* background-image: radial-gradient(farthest-corner at 50% 50%, #ffd7be, #fff); */
+  /* background-image: radial-gradient(farthest-corner at 30% 70%, #ffd7be, #fff); */
+  /* background-size: 1000px 1000px; */
+  font-family: -apple-system, BlinkMacSystemFont,
+   'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease-in-out;
+  
+  
+}
+
+
+#Nav {
+  /* background-color:white; */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  border-radius: 0px 0px 30px 30px;
+  /* position: fixed; */
+  backdrop-filter: blur(25px);
+  /* box-shadow:  opx opx 30px rgba(227,228,237,0.37); */
+  border: 4px solid rgba(255,255,255,0.18);
+  /* box-shadow: 16px 14px 20px rgb(243, 232, 255); */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+#Nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 1000;
+  padding-top: 20px;
+  margin: 0;
+  margin-left: 5%;
+  /* border-radius: 50px; */
+  margin-top: 2px;
+  background-color: none;
+  backdrop-filter: blur(25px);
+
+}
+.shrink {
+  height: 70px; 
+  /* padding-top: 30px; */
+}
+.close-menu {
+  right: -300px;
+}
+a{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  
+}
+#name img{
+
+  height: 40px;
+  background-color:transparent;
+  /* margin-right: 5px; */
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0px 20px;
+  position: relative;
+
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover {
+  color: orange;
+}
+
+#navbar li a:hover::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: orange;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: black;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #Nav {
+    padding: 20px 50px;
+  }
+  #navbar li {
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #Nav {
+    padding: 20px 30px;
+  }
+  #navbar li {
+    padding: 0px 10px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    font-weight:bold;
+    top: 95px;
+    right: -300px;
+    width: 250px;
+    border: 3px solid white;
+    height: 50vh;
+    border-radius: 20px;
+    background-color:#fff4f3;
+
+    /* backdrop-filter: blur(200px); */
+    padding: 40px 0px 0px 50px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+  }
+  #navbar.active {
+    right: 0px;
+  }
+ 
+  #navbar:not(.active) {
+    display: none;
+  }
+  #mobile {
+    display: block;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  
+  }
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #navbar{
+    height: 320px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  #Nav {
+    padding: 20px 20px;
+  }
+  #navbar li {
+    padding: 0px 20px;
+  }
+  /* #navbar{
+    height: 40vh;
+  } */
+}
+
+
+

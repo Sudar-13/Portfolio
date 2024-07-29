@@ -1,0 +1,164 @@
+.homeContainer{
+  display: flex;
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 60px;
+  font-family: "Poppins" , sans-serif;
+}
+.content{
+  padding: 0px;
+  width: 70%;
+  height: auto;
+  padding: 50px;
+  /* border: 2px solid red; */
+}
+
+.line1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: gray;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.line2{
+  font-size:34px ;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: #800000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+.line3{
+  font-size: 34px;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  word-spacing: 10px;
+  font-weight: 300;
+  
+}
+.line4{
+  font-size:20px;
+  font-weight:400;
+  line-height:30px;
+  color:  #7d7c7c;
+  text-align: justify;
+
+}
+.resume{
+  height: 40px;
+  width: 140px;
+  font-size: 14px;
+  margin-top: 30px;
+  background-color: white;
+  color: #AF7C7B;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #800000 ;
+  cursor: pointer;
+}
+.hire{
+  height: 40px;
+  margin-left: 50px;
+  width: 140px;
+  font-size: 14px;
+  margin-top: 30px;
+  background-color:white;
+  color: #800000;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid #800000;
+  cursor: pointer;
+}
+
+.profile{
+  width: 30%;
+  height: 440px;
+  background-size:contain;
+  background-image: url("./Sudar.png");
+  background-position: center;
+  border-radius: 50%;
+  /* border: 2px solid black; */
+  object-fit: cover;
+  background-repeat: no-repeat;
+  /* filter: drop-shadow(2px 2px 2px black); */
+}
+
+
+@media (max-width: 1024px) {
+  .homeContainer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .content {
+    width: 100%;
+  }
+  .profile {
+    width: 40%;
+    height: 300px;
+  }
+  .line1 {
+    font-size: 28px;
+  }
+  .line2 {
+    font-size: 30px;
+  }
+  .line3 {
+    font-size: 28px;
+  }
+  .line4 {
+    font-size: 18px;
+  }
+  .resume, .hire {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .homeContainer {
+    margin-top: 30px;
+    flex-direction: column;
+    display: flex;
+     align-items: center;
+  }
+  .content {
+    width: 100%;
+    padding:10px;
+  }
+  .profile {
+    width: 55%;
+    margin-top: 40px;
+    height: 220px;
+    /* padding-bottom: 60px; */
+  }
+  .line1 {
+    font-size: 22px;
+  }
+  .line2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .line3 {
+    font-size: 18px;
+  }
+  .line4 {
+    font-size: 16px;
+  }
+  .resume, .hire {
+    font-size: 14px;
+    margin-left: 0px;
+    
+  }
+  .hire{
+      margin-left: 50px;
+  }
+}
