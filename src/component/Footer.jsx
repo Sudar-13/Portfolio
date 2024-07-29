@@ -14,7 +14,7 @@ const Footer = () => {
         <a href="https://www.instagram.com/iam__sudar/?igsh=ajM3amV2MWFhM3l2" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
       </div>
       <div className={style.copyright}>
-        <p>© {new Date().getFullYear()} Kannan J. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Sudar R. All Rights Reserved.</p>
       </div>
       
     </footer>
